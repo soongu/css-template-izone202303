@@ -22,3 +22,87 @@ input {
 }
 
 /* header style */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+header .inner-header {
+    /* background: orange; */
+    width: 92%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 700;
+    color: #fff;
+}
+header .inner-header .logo {
+    /* background: tomato; */
+    flex: 1;
+}
+header .inner-header .logo a {
+    display: block;
+    width: 100%;
+}
+header .inner-header .logo a img {
+    height: 60px;
+}
+
+header .inner-header .intro-text {
+    /* background: greenyellow; */
+    flex: 4;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+header .inner-header .menu-open {
+    /* background: skyblue; */
+    flex: 1;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .inner-header .menu-open .lnr-menu {
+    font-size: 33px;
+    margin-left: 15px;
+}
+
+header .gnb {
+    background: #000;
+    color: #666;
+    font-size: 40px;
+    padding: 70px 100px;
+    box-sizing: border-box;
+
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header .gnb .close {
+    display: block;
+    color: #fff;
+}
+header .gnb ul {
+    margin-right: 200px;
+}
+header .gnb ul li {
+    font-weight: 700;
+    line-height: 1.7;
+}
+header .gnb ul li:hover,
+header .gnb ul li.active
+{
+    color: #fff;
+}
