@@ -154,3 +154,40 @@ section.visual .slide li .scroll {
     color: #ccc;
     transform: rotate(-90deg);
 }
+
+
+/* section contents style */
+section.contents {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 120px 0;
+}
+
+/* > .main-text */
+section.contents .main-text {
+    /* background: tomato; */
+
+    width: 80%;
+    margin: 0 auto;
+    font-size: 25px;
+
+    display: flex;
+}
+section.contents .main-text h3 {
+    /* background: red; */
+    flex: 1;
+    font-weight: 700;
+}
+section.contents .main-text p {
+    /* background: blue; */
+    flex: 2;
+    font-size: 23px;
+    line-height: 1.4;
+}
+
+section.contents .main-text p span {
+    display: block;
+    font-size: 20px;
+    color: #999;
+    margin-top: 30px;
+}
